@@ -1202,3 +1202,609 @@
 2023-11-10 13:49:54.259 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-11-10 13:49:54.259 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-11-10 13:49:54.260 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 14:09:38.197 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:09:38.209 INFO  [Thread-75] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:09:38.209 INFO  [Thread-75] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:09:38.209 INFO  [Thread-75] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 14:09:38.215 INFO  [Thread-75] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:09:38.217 INFO  [Thread-75] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:09:38.280 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:09:38.280 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:09:38.365 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:09:38.365 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:09:38.365 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:09:38.365 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:09:38.369 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:09:38.369 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 88 ms
+2023-11-10 14:09:38.409 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:09:38.409 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:09:38.409 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:09:38.409 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:09:38.409 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:09:38.409 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:09:38.412 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62fef604, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4814f9d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a60b111, org.springframework.security.web.header.HeaderWriterFilter@72d1dfce, org.springframework.security.web.csrf.CsrfFilter@1ebda338, org.springframework.security.web.authentication.logout.LogoutFilter@35b5aaf6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bb1b01c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b509c16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3703051d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d829489, org.springframework.security.web.session.SessionManagementFilter@69b77b7c, org.springframework.security.web.access.ExceptionTranslationFilter@3e9def84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@780ba71c]
+2023-11-10 14:09:38.438 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:09:38.442 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:09:38.443 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:09:38.445 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.177 seconds (JVM running for 10293.054)
+2023-11-10 14:09:38.445 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:28:11.337 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:28:11.343 INFO  [Thread-79] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:28:11.343 INFO  [Thread-79] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:28:11.345 INFO  [Thread-79] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:28:11.346 INFO  [Thread-79] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:28:11.405 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:28:11.405 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:28:11.494 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:28:11.494 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:28:11.494 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:28:11.494 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:28:11.500 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:28:11.500 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 94 ms
+2023-11-10 14:28:11.539 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:28:11.540 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:28:11.540 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:28:11.540 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:28:11.540 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:28:11.540 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:28:11.543 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6da425eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a02b37c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e50826, org.springframework.security.web.header.HeaderWriterFilter@4af8eaa9, org.springframework.security.web.csrf.CsrfFilter@2098fe35, org.springframework.security.web.authentication.logout.LogoutFilter@591ee811, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1219ccea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ad84a65, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27785035, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75f29d76, org.springframework.security.web.session.SessionManagementFilter@666b3b88, org.springframework.security.web.access.ExceptionTranslationFilter@17f79c3b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c0a7ab0]
+2023-11-10 14:28:11.572 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:28:11.576 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:28:11.577 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:28:11.579 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.184 seconds (JVM running for 11406.187)
+2023-11-10 14:28:11.579 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:29:24.140 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:29:24.147 INFO  [Thread-83] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:29:24.147 INFO  [Thread-83] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:29:24.150 INFO  [Thread-83] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:29:24.151 INFO  [Thread-83] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:29:24.407 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:29:24.408 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:29:24.506 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:29:24.507 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:29:24.507 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:29:24.507 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:29:24.512 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:29:24.512 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 103 ms
+2023-11-10 14:29:24.546 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:29:24.546 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:29:24.546 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:29:24.546 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:29:24.546 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:29:24.546 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:29:24.549 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f077a40, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cbad4b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@64f1db31, org.springframework.security.web.header.HeaderWriterFilter@42942147, org.springframework.security.web.csrf.CsrfFilter@4392e268, org.springframework.security.web.authentication.logout.LogoutFilter@68f80cf7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d884dc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7603290a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15fea094, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@779f8301, org.springframework.security.web.session.SessionManagementFilter@3024feff, org.springframework.security.web.access.ExceptionTranslationFilter@3cd5c6bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d5cce57]
+2023-11-10 14:29:24.570 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:29:24.574 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:29:24.575 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:29:24.576 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.374 seconds (JVM running for 11479.185)
+2023-11-10 14:29:24.577 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:31:32.142 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:31:32.147 INFO  [Thread-87] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:31:32.147 INFO  [Thread-87] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:31:32.149 INFO  [Thread-87] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:31:32.150 INFO  [Thread-87] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:31:32.204 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:31:32.204 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:31:32.283 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:31:32.283 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:31:32.283 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:31:32.283 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:31:32.288 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:31:32.288 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 83 ms
+2023-11-10 14:31:32.322 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:31:32.322 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:31:32.322 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:31:32.322 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:31:32.322 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:31:32.322 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:31:32.325 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@404dd2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3712e8f3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7977fc79, org.springframework.security.web.header.HeaderWriterFilter@2c6a31f, org.springframework.security.web.csrf.CsrfFilter@1d29da59, org.springframework.security.web.authentication.logout.LogoutFilter@5ab5e876, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@916ba9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7980cc2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e69565b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@483e2cb4, org.springframework.security.web.session.SessionManagementFilter@2adf1069, org.springframework.security.web.access.ExceptionTranslationFilter@3636c830, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2eda3134]
+2023-11-10 14:31:32.346 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:31:32.350 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:31:32.350 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:31:32.352 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.158 seconds (JVM running for 11606.96)
+2023-11-10 14:31:32.352 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:32:16.542 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:32:16.549 INFO  [Thread-91] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:32:16.549 INFO  [Thread-91] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:32:16.552 INFO  [Thread-91] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:32:16.553 INFO  [Thread-91] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:32:16.612 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:32:16.612 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:32:16.692 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:32:16.692 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:32:16.692 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:32:16.692 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:32:16.696 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:32:16.696 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 83 ms
+2023-11-10 14:32:16.731 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:32:16.732 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:32:16.732 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:32:16.732 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:32:16.732 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:32:16.732 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:32:16.735 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e305d83, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71075b4b, org.springframework.security.web.context.SecurityContextPersistenceFilter@60410668, org.springframework.security.web.header.HeaderWriterFilter@560d1147, org.springframework.security.web.csrf.CsrfFilter@60bb00e2, org.springframework.security.web.authentication.logout.LogoutFilter@2ca9340f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20810d65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fb649ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@318ff635, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dc7fa35, org.springframework.security.web.session.SessionManagementFilter@5845b192, org.springframework.security.web.access.ExceptionTranslationFilter@4844eb96, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f626bdd]
+2023-11-10 14:32:16.755 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:32:16.758 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:32:16.759 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:32:16.761 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.161 seconds (JVM running for 11651.369)
+2023-11-10 14:32:16.761 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:33:00.868 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:33:00.879 INFO  [Thread-95] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:33:00.879 INFO  [Thread-95] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:33:00.882 INFO  [Thread-95] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:33:00.883 INFO  [Thread-95] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:33:01.150 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:33:01.151 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:33:01.258 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:33:01.258 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:33:01.258 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:33:01.258 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:33:01.262 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:33:01.262 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 109 ms
+2023-11-10 14:33:01.296 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:33:01.296 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:33:01.296 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:33:01.296 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:33:01.296 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:33:01.296 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:33:01.299 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b6ee380, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79bbf05e, org.springframework.security.web.context.SecurityContextPersistenceFilter@9cf2cfd, org.springframework.security.web.header.HeaderWriterFilter@15dcb78a, org.springframework.security.web.csrf.CsrfFilter@56e666f3, org.springframework.security.web.authentication.logout.LogoutFilter@369f01e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@294916f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2eb12f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72fb85c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c85120c, org.springframework.security.web.session.SessionManagementFilter@6c7b0e7f, org.springframework.security.web.access.ExceptionTranslationFilter@5faa80a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c2d2ed3]
+2023-11-10 14:33:01.319 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:33:01.323 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:33:01.323 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:33:01.325 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.393 seconds (JVM running for 11695.933)
+2023-11-10 14:33:01.325 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:57:37.617 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:57:37.624 INFO  [Thread-99] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:57:37.624 INFO  [Thread-99] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:57:37.626 INFO  [Thread-99] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:57:37.627 INFO  [Thread-99] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:57:37.816 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:57:37.816 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:57:37.915 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:57:37.915 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:57:37.915 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:57:37.915 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:57:37.920 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:57:37.920 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 103 ms
+2023-11-10 14:57:37.966 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:57:37.966 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:57:37.966 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:57:37.966 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:57:37.966 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:57:37.966 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:57:37.969 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46d4cb47, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c91338e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5486a985, org.springframework.security.web.header.HeaderWriterFilter@49412ce0, org.springframework.security.web.csrf.CsrfFilter@64da9f0c, org.springframework.security.web.authentication.logout.LogoutFilter@3fcd39c9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e27d7cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@293b2c97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69dd237c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6873ddc7, org.springframework.security.web.session.SessionManagementFilter@649468e4, org.springframework.security.web.access.ExceptionTranslationFilter@2cfa375d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bc9e3f8]
+2023-11-10 14:57:37.993 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:57:37.997 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:57:37.998 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:57:38.000 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.345 seconds (JVM running for 13172.606)
+2023-11-10 14:57:38.000 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:59:14.136 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 14:59:14.138 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 14:59:14.139 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 14:59:45.055 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 14:59:45.058 INFO  [Thread-103] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:59:45.058 INFO  [Thread-103] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 14:59:45.058 INFO  [Thread-103] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 14:59:45.059 INFO  [Thread-103] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:59:45.060 INFO  [Thread-103] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:59:45.232 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 61506 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 14:59:45.232 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 14:59:45.324 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 14:59:45.325 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:59:45.325 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 14:59:45.325 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 14:59:45.328 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 14:59:45.328 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 95 ms
+2023-11-10 14:59:45.366 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:59:45.366 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 14:59:45.366 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:59:45.366 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 14:59:45.366 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 14:59:45.366 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 14:59:45.369 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@338262fe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10b278, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ef0c78, org.springframework.security.web.header.HeaderWriterFilter@d25e2c4, org.springframework.security.web.csrf.CsrfFilter@2a1d24fe, org.springframework.security.web.authentication.logout.LogoutFilter@768236c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22d58abc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58d72c36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ac6c62a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@624eaa9a, org.springframework.security.web.session.SessionManagementFilter@4096fa40, org.springframework.security.web.access.ExceptionTranslationFilter@19f85360, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@321a04c4]
+2023-11-10 14:59:45.390 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 14:59:45.393 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 14:59:45.394 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 14:59:45.396 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.307 seconds (JVM running for 13300.002)
+2023-11-10 14:59:45.396 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 14:59:46.877 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 14:59:46.877 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 14:59:46.878 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 15:00:00.633 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:00:00.633 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:00:00.649 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-10 15:00:00.650 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-10 15:00:01.090 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:00:01.094 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:00:01.095 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:00:01.095 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:00:01.118 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:00:01.118 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 468 ms
+2023-11-10 15:00:01.311 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:00:01.311 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:00:01.312 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:00:01.312 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:00:01.312 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:00:01.312 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:00:01.329 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f10837e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365f056, org.springframework.security.web.context.SecurityContextPersistenceFilter@5041deae, org.springframework.security.web.header.HeaderWriterFilter@716127af, org.springframework.security.web.csrf.CsrfFilter@2c401cd8, org.springframework.security.web.authentication.logout.LogoutFilter@2ebbde05, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78a75544, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bc0b483, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@579d7cdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@412a980b, org.springframework.security.web.session.SessionManagementFilter@2ae40808, org.springframework.security.web.access.ExceptionTranslationFilter@168e2aaa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d0f62a4]
+2023-11-10 15:00:01.424 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:00:01.432 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:00:01.438 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:00:01.443 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.939 seconds (JVM running for 1.231)
+2023-11-10 15:00:05.725 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:00:05.725 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:00:05.726 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 15:13:40.785 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:13:40.808 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:13:40.808 INFO  [Thread-5] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:13:40.809 INFO  [Thread-5] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:13:40.814 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:13:40.815 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:13:41.004 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:13:41.005 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:13:41.122 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:13:41.122 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:13:41.122 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:13:41.122 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:13:41.127 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:13:41.127 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 121 ms
+2023-11-10 15:13:41.179 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:13:41.179 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:13:41.179 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:13:41.179 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:13:41.179 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:13:41.179 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:13:41.183 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a0e1a7b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ccac418, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e497813, org.springframework.security.web.header.HeaderWriterFilter@6590834d, org.springframework.security.web.csrf.CsrfFilter@1f68ce92, org.springframework.security.web.authentication.logout.LogoutFilter@70a833b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@104170f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13e2a414, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7289d7ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b09cea7, org.springframework.security.web.session.SessionManagementFilter@670c263e, org.springframework.security.web.access.ExceptionTranslationFilter@7f2a5583, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@553e4b45]
+2023-11-10 15:13:41.212 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:13:41.217 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:13:41.218 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:13:41.220 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.365 seconds (JVM running for 821.006)
+2023-11-10 15:13:41.221 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:13:46.921 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:13:46.922 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:13:46.923 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 15:14:13.184 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:14:13.185 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:14:13.185 INFO  [Thread-7] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:14:13.186 INFO  [Thread-7] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:14:13.186 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:14:13.187 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:14:13.227 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:14:13.227 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:14:13.319 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:14:13.319 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:14:13.319 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:14:13.319 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:14:13.323 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:14:13.323 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 95 ms
+2023-11-10 15:14:13.369 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:14:13.369 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:14:13.369 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:14:13.369 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:14:13.369 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:14:13.369 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:14:13.373 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56a015f0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d0b0f1b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5595a14c, org.springframework.security.web.header.HeaderWriterFilter@2224aa21, org.springframework.security.web.csrf.CsrfFilter@79c480dd, org.springframework.security.web.authentication.logout.LogoutFilter@a269718, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2382307, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d369702, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a445527, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62ccec3e, org.springframework.security.web.session.SessionManagementFilter@88a0ae8, org.springframework.security.web.access.ExceptionTranslationFilter@65a3af0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62fda6b2]
+2023-11-10 15:14:13.396 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:14:13.401 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:14:13.403 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:14:13.405 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.19 seconds (JVM running for 853.191)
+2023-11-10 15:14:13.405 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:15:26.173 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:15:26.181 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:26.181 INFO  [Thread-11] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:15:26.186 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:26.187 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:26.236 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:15:26.236 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:15:26.320 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:15:26.321 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:26.321 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:15:26.321 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:15:26.325 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:15:26.326 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 89 ms
+2023-11-10 15:15:26.370 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:15:26.370 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:15:26.370 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:15:26.370 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:15:26.370 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:15:26.370 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:15:26.373 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e9c9ef9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72c1fad2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ce1c36b, org.springframework.security.web.header.HeaderWriterFilter@250cb63d, org.springframework.security.web.csrf.CsrfFilter@3c2e735f, org.springframework.security.web.authentication.logout.LogoutFilter@7a2d9d4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24612189, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cf0d080, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c8d367d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b33ac63, org.springframework.security.web.session.SessionManagementFilter@339afacc, org.springframework.security.web.access.ExceptionTranslationFilter@302c1dba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6992033a]
+2023-11-10 15:15:26.395 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:15:26.399 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:26.400 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:15:26.402 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.178 seconds (JVM running for 926.188)
+2023-11-10 15:15:26.402 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:15:31.069 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:15:31.070 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:15:31.070 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-10 15:15:53.268 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:15:53.270 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:53.270 INFO  [Thread-15] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:15:53.270 INFO  [Thread-15] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:15:53.271 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:53.272 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:53.303 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:15:53.304 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:15:53.384 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:15:53.384 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:53.384 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:15:53.384 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:15:53.388 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:15:53.388 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 84 ms
+2023-11-10 15:15:53.429 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:15:53.430 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:15:53.430 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:15:53.430 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:15:53.430 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:15:53.430 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:15:53.433 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@478c7ac7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@366de759, org.springframework.security.web.context.SecurityContextPersistenceFilter@111ff441, org.springframework.security.web.header.HeaderWriterFilter@4a6a04f1, org.springframework.security.web.csrf.CsrfFilter@169ba27a, org.springframework.security.web.authentication.logout.LogoutFilter@ede5af, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21eeeee5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e270ae5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54f0d25c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@510094f1, org.springframework.security.web.session.SessionManagementFilter@5a5c0502, org.springframework.security.web.access.ExceptionTranslationFilter@203feb0c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5276bf8a]
+2023-11-10 15:15:53.457 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:15:53.461 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:15:53.462 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:15:53.463 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.171 seconds (JVM running for 953.25)
+2023-11-10 15:15:53.464 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:16:23.434 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:16:23.439 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:16:23.439 INFO  [Thread-19] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:16:23.440 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:16:23.441 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:16:23.482 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:16:23.482 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:16:23.563 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:16:23.564 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:16:23.564 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:16:23.564 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:16:23.567 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:16:23.567 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 84 ms
+2023-11-10 15:16:23.607 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:16:23.607 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:16:23.607 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:16:23.607 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:16:23.607 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:16:23.607 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:16:23.610 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67b32def, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e56999e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5833a3a8, org.springframework.security.web.header.HeaderWriterFilter@58869bdf, org.springframework.security.web.csrf.CsrfFilter@270eb92, org.springframework.security.web.authentication.logout.LogoutFilter@22f7ec7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c9c59aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@211f8753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4daba8cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65043a4f, org.springframework.security.web.session.SessionManagementFilter@5d1affe2, org.springframework.security.web.access.ExceptionTranslationFilter@57c5c207, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77619912]
+2023-11-10 15:16:23.630 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:16:23.634 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:16:23.636 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:16:23.638 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.167 seconds (JVM running for 983.424)
+2023-11-10 15:16:23.638 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:18:22.279 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:18:22.282 INFO  [Thread-23] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:22.282 INFO  [Thread-23] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:18:22.283 INFO  [Thread-23] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:22.283 INFO  [Thread-23] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:22.316 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64659 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:18:22.316 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:18:22.396 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:18:22.396 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:22.396 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:18:22.396 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:18:22.400 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:18:22.400 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 83 ms
+2023-11-10 15:18:22.440 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:18:22.440 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:18:22.440 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:18:22.440 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:18:22.440 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:18:22.440 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:18:22.443 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14d80ab3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28a63660, org.springframework.security.web.context.SecurityContextPersistenceFilter@b79a540, org.springframework.security.web.header.HeaderWriterFilter@44c19d41, org.springframework.security.web.csrf.CsrfFilter@3fb63337, org.springframework.security.web.authentication.logout.LogoutFilter@49b58061, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68f559d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d43bd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ab78558, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1048bcef, org.springframework.security.web.session.SessionManagementFilter@5d80147, org.springframework.security.web.access.ExceptionTranslationFilter@78fe3b52, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e1cc942]
+2023-11-10 15:18:22.465 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:18:22.469 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:22.470 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:18:22.472 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.166 seconds (JVM running for 1102.258)
+2023-11-10 15:18:22.472 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:18:25.069 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64953 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:18:25.070 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:18:25.086 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-10 15:18:25.086 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-10 15:18:25.535 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:18:25.538 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:25.539 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:18:25.539 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:18:25.563 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:18:25.563 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 477 ms
+2023-11-10 15:18:25.759 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:18:25.759 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:18:25.760 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:18:25.760 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:18:25.760 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:18:25.760 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:18:25.775 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33856194, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25ab37bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5eaeb0bc, org.springframework.security.web.header.HeaderWriterFilter@d8f7977, org.springframework.security.web.csrf.CsrfFilter@6742e90e, org.springframework.security.web.authentication.logout.LogoutFilter@228a6a79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@118581d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f60c66e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e747a4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@189db1d6, org.springframework.security.web.session.SessionManagementFilter@713675a7, org.springframework.security.web.access.ExceptionTranslationFilter@61611553, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7dd141cd]
+2023-11-10 15:18:25.877 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:18:25.885 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:18:25.891 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:18:25.896 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.961 seconds (JVM running for 1.208)
+2023-11-10 15:18:30.299 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:18:30.299 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:18:30.300 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 15:19:08.002 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:19:08.011 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:19:08.011 INFO  [Thread-5] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:19:08.012 INFO  [Thread-5] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:19:08.017 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:19:08.019 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:19:08.072 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64953 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:19:08.072 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:19:08.181 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:19:08.181 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:19:08.181 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:19:08.181 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:19:08.186 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:19:08.187 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 114 ms
+2023-11-10 15:19:08.245 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:19:08.245 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:19:08.245 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:19:08.245 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:19:08.245 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:19:08.245 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:19:08.249 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4acf688e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c7b391e, org.springframework.security.web.context.SecurityContextPersistenceFilter@11ddf680, org.springframework.security.web.header.HeaderWriterFilter@445110ca, org.springframework.security.web.csrf.CsrfFilter@612d7532, org.springframework.security.web.authentication.logout.LogoutFilter@19187c17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e96f983, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ce1efd8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60fa7dce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d7d1cd7, org.springframework.security.web.session.SessionManagementFilter@1b53943d, org.springframework.security.web.access.ExceptionTranslationFilter@2b92d279, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18ef310f]
+2023-11-10 15:19:08.278 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:19:08.283 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:19:08.284 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:19:08.286 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.228 seconds (JVM running for 43.597)
+2023-11-10 15:19:08.287 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:19:16.435 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:19:16.436 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:19:16.437 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 15:22:25.467 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:22:25.475 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:22:25.475 INFO  [Thread-7] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:22:25.476 INFO  [Thread-7] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:22:25.479 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:22:25.481 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:22:25.531 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64953 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:22:25.532 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:22:25.626 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:22:25.627 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:22:25.627 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:22:25.627 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:22:25.631 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:22:25.631 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 98 ms
+2023-11-10 15:22:25.675 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:22:25.675 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:22:25.675 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:22:25.676 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:22:25.676 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:22:25.676 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:22:25.679 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6972534c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dd87d7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2321e7b6, org.springframework.security.web.header.HeaderWriterFilter@6c4445b, org.springframework.security.web.csrf.CsrfFilter@3e014d10, org.springframework.security.web.authentication.logout.LogoutFilter@46fa3242, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f9e617f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b8d8b50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fcff6e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f820980, org.springframework.security.web.session.SessionManagementFilter@177c5184, org.springframework.security.web.access.ExceptionTranslationFilter@9d23cce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf33762]
+2023-11-10 15:22:25.702 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:22:25.706 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:22:25.708 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:22:25.710 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.198 seconds (JVM running for 241.021)
+2023-11-10 15:22:25.711 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:22:32.146 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:22:32.147 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:22:32.152 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+2023-11-10 15:25:17.348 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:25:17.359 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:25:17.359 INFO  [Thread-11] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:25:17.360 INFO  [Thread-11] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:25:17.363 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:25:17.365 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:25:17.568 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64953 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:25:17.569 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:25:17.667 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:25:17.668 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:25:17.668 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:25:17.668 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:25:17.672 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:25:17.672 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 101 ms
+2023-11-10 15:25:17.717 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:25:17.717 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:25:17.717 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:25:17.717 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:25:17.717 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:25:17.717 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:25:17.720 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49f6238f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6eb473f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a0a51e7, org.springframework.security.web.header.HeaderWriterFilter@76568e29, org.springframework.security.web.csrf.CsrfFilter@1128c546, org.springframework.security.web.authentication.logout.LogoutFilter@339a507a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10832cf8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9029d15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b677dda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58b90881, org.springframework.security.web.session.SessionManagementFilter@6ddfbbef, org.springframework.security.web.access.ExceptionTranslationFilter@7c79e843, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33d0ad6c]
+2023-11-10 15:25:17.742 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:25:17.746 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:25:17.747 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:25:17.749 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.352 seconds (JVM running for 413.06)
+2023-11-10 15:25:17.749 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:25:19.379 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 15:25:19.381 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 15:25:19.382 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 15:26:01.853 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:26:01.858 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:26:01.858 INFO  [Thread-15] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:26:01.858 INFO  [Thread-15] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 15:26:01.862 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:26:01.864 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:26:01.916 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64953 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:26:01.916 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:26:02.001 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:26:02.002 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:26:02.002 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:26:02.002 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:26:02.006 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:26:02.006 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 89 ms
+2023-11-10 15:26:02.049 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:26:02.049 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:26:02.049 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:26:02.049 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:26:02.049 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:26:02.049 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:26:02.052 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61f557f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dd91ace, org.springframework.security.web.context.SecurityContextPersistenceFilter@73295348, org.springframework.security.web.header.HeaderWriterFilter@71fb9676, org.springframework.security.web.csrf.CsrfFilter@25111343, org.springframework.security.web.authentication.logout.LogoutFilter@2a49a6b6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c9e5bc3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e4fe668, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@332a9bf1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c511813, org.springframework.security.web.session.SessionManagementFilter@5e0fc8c1, org.springframework.security.web.access.ExceptionTranslationFilter@29489875, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f8d630]
+2023-11-10 15:26:02.075 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:26:02.079 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:26:02.080 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:26:02.082 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.182 seconds (JVM running for 457.393)
+2023-11-10 15:26:02.082 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 15:38:47.736 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 15:38:47.750 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:38:47.751 INFO  [Thread-19] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 15:38:47.757 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:38:47.759 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:38:48.024 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 64953 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 15:38:48.024 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 15:38:48.134 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 15:38:48.134 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:38:48.134 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 15:38:48.134 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 15:38:48.138 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 15:38:48.138 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 112 ms
+2023-11-10 15:38:48.182 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:38:48.182 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 15:38:48.182 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:38:48.182 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 15:38:48.182 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 15:38:48.182 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 15:38:48.185 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67a520c7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70d9031d, org.springframework.security.web.context.SecurityContextPersistenceFilter@315ebb01, org.springframework.security.web.header.HeaderWriterFilter@60e433e7, org.springframework.security.web.csrf.CsrfFilter@5cab6760, org.springframework.security.web.authentication.logout.LogoutFilter@26e2615d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@67c6ac4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c6bf947, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d518426, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7efc20dc, org.springframework.security.web.session.SessionManagementFilter@36c95adf, org.springframework.security.web.access.ExceptionTranslationFilter@2c4e34d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@659d76cc]
+2023-11-10 15:38:48.213 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 15:38:48.217 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 15:38:48.218 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 15:38:48.220 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.406 seconds (JVM running for 1223.513)
+2023-11-10 15:38:48.220 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 16:04:50.202 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 65460 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 16:04:50.203 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 16:04:50.219 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-10 16:04:50.219 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-10 16:04:50.706 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 16:04:50.710 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:04:50.710 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 16:04:50.710 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 16:04:50.773 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 16:04:50.774 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 555 ms
+2023-11-10 16:04:50.983 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 16:04:50.983 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 16:04:50.983 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 16:04:50.983 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 16:04:50.983 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 16:04:50.983 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 16:04:50.999 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@365f056, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@412a980b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a6f28e6, org.springframework.security.web.header.HeaderWriterFilter@4d58b073, org.springframework.security.web.csrf.CsrfFilter@725f164a, org.springframework.security.web.authentication.logout.LogoutFilter@2a9eabe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7784edf4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ac9612, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fd176df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11112697, org.springframework.security.web.session.SessionManagementFilter@20b62101, org.springframework.security.web.access.ExceptionTranslationFilter@4539ec31, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38b11855]
+2023-11-10 16:04:51.085 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 16:04:51.092 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:04:51.098 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 16:04:51.103 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 1.072 seconds (JVM running for 1.334)
+2023-11-10 16:05:43.685 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 16:05:43.686 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 16:05:43.687 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-10 16:08:57.714 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 88 class path changes (0 additions, 0 deletions, 88 modifications)
+2023-11-10 16:08:57.725 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:08:57.726 INFO  [Thread-5] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-10 16:08:57.727 INFO  [Thread-5] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 16:08:57.732 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:08:57.734 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:08:58.027 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Starting Project05Application using Java 17.0.7 on jc-MacBookAir.local with PID 65460 (/Users/juncheol/chunjae/project05/build/classes/java/main started by juncheol in /Users/juncheol/chunjae/project05)
+2023-11-10 16:08:58.027 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - The following 1 profile is active: "local"
+2023-11-10 16:08:58.136 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8086 (http)
+2023-11-10 16:08:58.136 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:08:58.137 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-10 16:08:58.137 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-10 16:08:58.141 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-10 16:08:58.141 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 112 ms
+2023-11-10 16:08:58.193 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 16:08:58.193 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-10 16:08:58.193 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 16:08:58.193 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-10 16:08:58.193 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-10 16:08:58.193 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/images/**']
+2023-11-10 16:08:58.196 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b769d91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33eb5d47, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a1f96cb, org.springframework.security.web.header.HeaderWriterFilter@177ea22d, org.springframework.security.web.csrf.CsrfFilter@54e78ca5, org.springframework.security.web.authentication.logout.LogoutFilter@17f0df44, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66206d7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c2cc0ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ea17ca8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e5e8312, org.springframework.security.web.session.SessionManagementFilter@3275a684, org.springframework.security.web.access.ExceptionTranslationFilter@17e028ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ee86008]
+2023-11-10 16:08:58.221 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-10 16:08:58.225 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8086"]
+2023-11-10 16:08:58.226 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8086 (http) with context path ''
+2023-11-10 16:08:58.228 INFO  [restartedMain] [c.chunjae.project05.Project05Application] - Started Project05Application in 0.445 seconds (JVM running for 248.459)
+2023-11-10 16:08:58.229 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-10 16:09:04.322 INFO  [http-nio-8086-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 16:09:04.322 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-10 16:09:04.323 INFO  [http-nio-8086-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms

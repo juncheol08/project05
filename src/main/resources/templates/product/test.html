@@ -18,7 +18,9 @@
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="/css/core-style.css">
 
-    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd"></script>
+<!--    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd"></script>-->
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd&submodules=geocoder"></script>
+
 
 </head>
 
@@ -46,14 +48,16 @@
 
 
             <div id="map" style="width:100%;height:400px;"></div>
+            <div>
+                <input type="text" value="" placeholder="선택 위치" id="selected-address">
+            </div>
 
             <!--            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd"></script>-->
             <!--            <script th:src="@{https://oapi.map.naver.com/openapi/v3/maps.js(ncpClientId=9rw0o1zqhd)}" type="text/javascript"></script>-->
-            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd&callback=CALLBACK_FUNCTION"></script>
-
+<!--            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd&callback=CALLBACK_FUNCTION"></script>-->
+            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd&submodules=geocoder"></script>
             <script>
-                var latitude; // 전역 변수로 선언
-                var longitude; // 전역 변수로 선언
+                var map, marker;
 
                 function getLocation() {
                     if (navigator.geolocation) {
@@ -64,66 +68,106 @@
                 }
 
                 function successCallback(position) {
-                    latitude = position.coords.latitude;
-                    longitude = position.coords.longitude;
-                    console.log('Latitude:', latitude, 'Longitude:', longitude);
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
 
-                    // 위치 정보를 받은 후에 지도를 생성하거나 다른 작업을 수행할 수 있습니다.
-                    createMap();
+                    createMap(latitude, longitude);
                 }
 
                 function errorCallback(error) {
                     console.error('Error getting location:', error);
                 }
 
-                function createMap() {
+                function createMap(latitude, longitude) {
                     var position = new naver.maps.LatLng(latitude, longitude);
 
-                    var map = new naver.maps.Map('map', {
+                    map = new naver.maps.Map('map', {
                         center: position,
                         zoom: 15
                     });
 
-                    var marker = new naver.maps.Marker({
+                    marker = new naver.maps.Marker({
                         position: position,
                         map: map
                     });
 
                     naver.maps.Event.addListener(map, 'click', function(e) {
                         marker.setPosition(e.coord);
+                        searchCoordinateToAddress(e.coord);
                     });
                 }
 
-                // 호출
+                function searchCoordinateToAddress(latlng) {
+                    naver.maps.Service.reverseGeocode({
+                        coords: latlng,
+                        orders: [
+                            naver.maps.Service.OrderType.ADDR,
+                            naver.maps.Service.OrderType.ROAD_ADDR
+                        ].join(',')
+                    }, function(status, response) {
+                        if (status !== naver.maps.Service.Status.OK) {
+                            return alert('Something Wrong!');
+                        }
+
+                        var item = response.v2.results[0];
+                        var address = item.name === 'roadaddr' ? item.roadAddress : item.jibunAddress;
+
+                        document.getElementById('selected-address').value = address;
+                    });
+                }
+
                 getLocation();
             </script>
-
-
-            <!-- 기존 -->
 <!--            <script>-->
-<!--                // var mapOptions = {-->
-<!--                //     center: new naver.maps.LatLng(37.47872199056639, 126.88642721962299),-->
-<!--                //     zoom: 15-->
-<!--                // };-->
-<!--                // var map = new naver.maps.Map('map', mapOptions);-->
-<!--                //Latitude: 37.4786913 Longitude: 126.8863638-->
-<!--                var position = new naver.maps.LatLng(37.47872199056639, 126.88642721962299);-->
+<!--                var latitude;-->
+<!--                var longitude;-->
 
-<!--                var map = new naver.maps.Map('map', {-->
-<!--                    center: position,-->
-<!--                    zoom: 15-->
-<!--                });-->
+<!--                function getLocation() {-->
+<!--                    if (navigator.geolocation) {-->
+<!--                        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);-->
+<!--                    } else {-->
+<!--                        console.error('Geolocation is not supported by this browser.');-->
+<!--                    }-->
+<!--                }-->
 
-<!--                var marker = new naver.maps.Marker({-->
-<!--                    position: position,-->
-<!--                    map: map-->
-<!--                });-->
+<!--                function successCallback(position) {-->
+<!--                    latitude = position.coords.latitude;-->
+<!--                    longitude = position.coords.longitude;-->
+<!--                    console.log('Latitude:', latitude, 'Longitude:', longitude);-->
 
-<!--                naver.maps.Event.addListener(map, 'click', function(e) {-->
-<!--                    marker.setPosition(e.coord);-->
-<!--                });-->
+<!--                    // 위치 정보를 받은 후에 네이버지도를 생성-->
+<!--                    createMap();-->
+<!--                }-->
+
+<!--                function errorCallback(error) {-->
+<!--                    console.error('Error getting location:', error);-->
+<!--                }-->
+
+<!--                //////////////////////////////////////////////////////////////////////////////-->
+
+<!--                function createMap() {-->
+<!--                    var position = new naver.maps.LatLng(latitude, longitude);-->
+
+<!--                    var map = new naver.maps.Map('map', {-->
+<!--                        center: position,-->
+<!--                        zoom: 15,-->
+<!--                        // mapTypeControl: true-->
+<!--                    });-->
+
+<!--                    var marker = new naver.maps.Marker({-->
+<!--                        position: position,-->
+<!--                        map: map-->
+<!--                    });-->
+
+<!--                    naver.maps.Event.addListener(map, 'click', function(e) {-->
+<!--                        marker.setPosition(e.coord);-->
+<!--                    });-->
 
 
+<!--                }-->
+
+<!--                // 호출-->
+<!--                getLocation();-->
 <!--            </script>-->
 
 
