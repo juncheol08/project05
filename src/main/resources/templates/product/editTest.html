@@ -54,8 +54,8 @@
                 </div>
             </div>
             <div>
-                <input type="text" value="" placeholder="선택 위치" id="selected-address" style="width: 300px" readonly>
-                <input type="text" value="" placeholder="상세 위치" id="detail-address"><br>
+                <input type="text" th:value="${selectedAddress}" placeholder="선택 위치" id="selected-address" style="width: 300px" readonly>
+                <input type="text" th:value="${detailAddress}" placeholder="상세 위치" id="detail-address"><br>
                 x : <input type="text" value="" placeholder="" id="xdata"> <!-- hidden -->
                 y : <input type="text" value="" placeholder="" id="ydata"> <!-- hidden -->
             </div>
@@ -64,7 +64,7 @@
             <!--            <script th:src="@{https://oapi.map.naver.com/openapi/v3/maps.js(ncpClientId=9rw0o1zqhd)}" type="text/javascript"></script>-->
 <!--            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd&callback=CALLBACK_FUNCTION"></script>-->
             <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9rw0o1zqhd&submodules=geocoder"></script>
-            <script>
+            <script th:inline="javascript">
                 var map, marker; //지도, 마커
                 var latitude, longitude; // 위도, 경도 저장 전역변수
 
@@ -82,11 +82,11 @@
                     marker = new naver.maps.Marker({
                         map: map
                     });
-
+                    marker.setPosition(naver.maps.LatLng(latitude, longitude));
 
                     naver.maps.Event.addListener(map, 'click', function (e) {
                         marker.setPosition(e.coord); //클릭한 위치로 마커 표시
-                        searchCoordinateToAddress(e.coord); // 클락한 위치 주소 검색
+                        searchCoordinateToAddress(e.coord); // 클릭한 위치 주소 검색
                     });
 
                     // '주소 검색' 버튼 클릭
@@ -104,19 +104,19 @@
                 }
 
                 //현재 위치 가져와서 이동(장치에 GPS없으면 IP주소로 대략적인 위치 검색함)
-                function getLocation() {
-                    if (navigator.geolocation) {
-                        navigator.geolocation.getCurrentPosition(function (position) {
-                            initMap(position.coords.latitude, position.coords.longitude);  // 현재 위치로 지도 생성
-                        }, function (error) {
-                            console.error('Geolocation error:', error);
-                            initMap(37.4787123, 126.8864278); // 현재 위치 못찾을 때 기본 위치 : 마리오 아울렛2관
-                        });
-                    } else {
-                        console.error('Geolocation is not supported by this browser.');
-                        initMap(37.4787123, 126.8864278); // 현재 위치 못찾을 때 기본 위치 : 마리오 아울렛2관
-                    }
-                }
+                // function getLocation() {
+                //     if (navigator.geolocation) {
+                //         navigator.geolocation.getCurrentPosition(function (position) {
+                //             initMap(position.coords.latitude, position.coords.longitude);  // 현재 위치로 지도 생성
+                //         }, function (error) {
+                //             console.error('Geolocation error:', error);
+                //             initMap(37.4787123, 126.8864278); // 현재 위치 못찾을 때 기본 위치 : 마리오 아울렛2관
+                //         });
+                //     } else {
+                //         console.error('Geolocation is not supported by this browser.');
+                //         initMap(37.4787123, 126.8864278); // 현재 위치 못찾을 때 기본 위치 : 마리오 아울렛2관
+                //     }
+                // }
 
                 //좌표값으로 주소 찾기
                 function searchCoordinateToAddress(latlng) {
@@ -147,7 +147,7 @@
                     });
                 }
 
-                // [검색기능] 주소값으로 좌표값 찾고, 지도 이동
+                //주소값으로 좌표값 찾고, 지도 이동
                 function searchAddressToCoordinate(address) {
                     naver.maps.Service.geocode({
                         query: address
@@ -168,8 +168,9 @@
                         // marker.setPosition(point); // 마커 표시
                     });
                 }
+                initMap([[${ydata}]], [[${xdata}]]);
 
-                getLocation(); // 호출
+                // getLocation(); // 호출
             </script>
 
 
