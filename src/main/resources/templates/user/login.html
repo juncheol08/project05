@@ -1,98 +1,70 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+      <th:block th:insert="~{layout/head :: head}"></th:block>
+      <link rel="stylesheet" th:href="@{/css/sub.css}">
+      <title>T셀파::로그인</title>
+    </head>
+  <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <!-- content 영역 시작 -->
+      <section class="vh-100 bg-primary">
+          <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                  <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                      <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                          <div class="card-body p-5 text-center">
+                              <form th:action="@{/login}" method="post">
+                                  <!--<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />-->
+                                  <div class="form-outline mb-4 text-center">
+                                      <a th:href="@{/}"><img th:src="@{/image/common/logo.png}" style="width:30%" /></a>
+                                  </div>
 
-    <!-- Title  -->
-    <title>로그인</title>
+                                  <div class="form-outline mb-4">
+                                      <input type="text" placeholder="아이디를 입력하세요." class="form-control" id="loginId" name="loginId" required />
+                                      <label class="form-label" for="loginId" style="display:none;">아이디</label>
+                                  </div>
 
-    <!-- Favicon  -->
-<!--    <link rel="icon" href="images/core-img/favicon.ico">-->
+                                  <div class="form-outline mb-4">
+                                      <input type="password" placeholder="*******" class="form-control" id="password" name="password" required />
+                                      <label class="form-label" for="password" style="display:none;">비밀번호</label>
+                                  </div>
 
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="/css/core-style.css">
+                                  <div class="row mb-4 text-center" th:if="${exception eq 'error01'}">
+                                      <div class="col">
+                                          <p style="color:red">아이디 또는 비밀번호가 올바르지 않거나 가입이 되지 않았습니다.</p>
+                                      </div>
+                                  </div>
 
+                                  <div class="row mb-4 text-center" th:if="${param.authError}">
+                                      <div class="col">
+                                          <p style="color:red">토큰 정보가 만료되었습니다. 토큰을 갱신하시기 바랍니다.</p>
+                                      </div>
+                                  </div>
 
-</head>
+                                  <!-- 2 column grid layout for inline styling -->
+                                  <div class="row mb-4">
+                                      <div class="col">
+                                          <!-- Simple link -->
+                                          <a th:href="@{/findId}" >아이디 찾기</a>
+                                          /
+                                          <a th:href="@{/findPw}" >비밀번호 찾기</a>
+                                      </div>
+                                  </div>
 
-<body>
-<header th:replace="fragments/header :: header"></header>
+                                  <!-- Submit button -->
+                                  <button type="submit" class="btn btn-primary btn-block mb-4">로그인</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- content 영역 종료 -->
 
-
-
-<!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb_area bg-img" style="background-image: url(images/bg-img/breadcumb.jpg);">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12">
-                <div class="page-title text-center">
-                    <h2>로그인</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### Breadcumb Area End ##### -->
-
-<!-- ##### Checkout Area Start ##### -->
-<div class="checkout_area section-padding-80">
-    <div class="container">
-        <div class="row">
-
-                <div class="order-details-confirmation">
-
-                    <form th:action="@{/user/login}" method="post">
-                        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-
-                        <div>
-                            <label for="loginId">아이디 : </label>
-                            <input type="text" id="loginId" name="loginId" placeholder="id 입력" required>
-                        </div>
-                        <div>
-                            <label for="password">비밀번호 : </label>
-                            <input type="password" id="password" name="password" placeholder="pw 입력" required>
-                        </div>
-                        <div th:if="${param.error}">
-                            <p style="color:red">아이디 또는 비밀번호가 올바르지 않거나 가입이 되지 않았습니다.</p>
-                        </div>
-                        <div th:if="${param.authError}">
-                            <p style="color:blue">토큰 정보가 만료되었습니다. 토큰을 갱신하시기 바랍니다.</p>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn essence-btn">로그인</button>
-                        </div>
-                    </form>
-
-                </div>
-
-        </div>
-    </div>
-</div>
-<!-- ##### Checkout Area End ##### -->
-
-<header th:replace="fragments/footer :: footer"></header>
-
-
-
-<!-- jQuery (Necessary for All JavaScript Plugins) -->
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="js/popper.min.js"></script>
-<!-- Bootstrap js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Plugins js -->
-<script src="js/plugins.js"></script>
-<!-- Classy Nav js -->
-<script src="js/classy-nav.min.js"></script>
-<!-- Active js -->
-<script src="js/active.js"></script>
-
-</body>
-
+      <script th:src="@{/js/sub.js}"></script>
+      <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  </body>
 </html>

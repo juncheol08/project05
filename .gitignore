@@ -17,6 +17,10 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+/log/**
+.DS_Store
+log/
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -35,7 +39,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-##
-.DS_Store
-/log/**

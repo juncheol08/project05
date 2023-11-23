@@ -1,111 +1,83 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
-
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title  -->
-    <title>공지사항</title>
-
-    <!-- Favicon  -->
-<!--    <link rel="icon" href="images/core-img/favicon.ico">-->
-
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="/css/core-style.css">
-
-
+    <title>공지사항 목록</title>
+    <th:block th:insert="~{layout/head :: head}"></th:block>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <style>
+        #title {color:#000000; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; width:700px; }
+    </style>
 </head>
-
 <body>
-<header th:replace="fragments/header :: header"></header>
+<th:block th:insert="~{layout/header :: header}"></th:block>
 
-
-
-
-
-<!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb_area bg-img" style="background-image: url(images/bg-img/breadcumb.jpg);">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12">
-                <div class="page-title text-center">
-                    <h2>공지사항</h2>
-
-                </div>
-            </div>
-        </div>
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">공지사항</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-white" href="../">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">공지사항</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">목록</li>
+            </ol>
+        </nav>
     </div>
 </div>
-<!-- ##### Breadcumb Area End ##### -->
+<!-- Page Header End -->
 
-<!-- ##### Checkout Area Start ##### -->
-<div class="checkout_area section-padding-80">
+<!-- noticeList start-->
+<div class="container-xxl py-5">
     <div class="container">
-        <div class="row">
-
-            <div class="container">
-                <div class="search_from">
-                    <select th:name="select_filter" class="select_filter">
-                        <option value="0">번호</option>
-                        <option value="1">제목</option>
-                        <option value="2">게시일</option>
-                    </select>
-                    <input type="text" th:name="search_filter" class="search_filter">
-                </div>
-                <table id="myTable" class="table table-striped table-bordered table-hover">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th width="80">번호</th>
-                        <th>제목</th>
-                        <th width="120">게시일</th>
-                        <th width="100">조회수</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="board, status : ${noticeList}">
-                        <td th:text="${status.index + 1}"></td>
-                        <td><a th:href="@{'/notice/detail?no=' + ${board.no}}" th:text="${board.title}"></a></td>
-                        <td>
-                            <span th:text="${board.resdate}">날짜</span>
-                        </td>
-                        <td th:text="${board.cnt}"></td>
-                    </tr>
-                    </tbody>
-                </table>
-
-                <!--                <div th:if="${#authentication.name == 'admin'}" class="button-group">-->
-                    <a th:href="@{'/notice/insert'}" class="button is-link is-outlined">글쓰기</a>
-<!--                </div>-->
-            </div>
-
-
-
-
-        </div>
+        <table class="table" style="width:85%; margin:0 auto;">
+            <thead>
+            <tr>
+                <th scope="col" width="80">#</th>
+                <th scope="col" width="600">제목</th>
+                <th scope="col">등록일</th>
+                <th scope="col">작성자</th>
+                <th scope="col">조회수</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="notice, noticeStat : ${list}">
+                <th scope="row" th:text="${noticeStat.index}"></th>
+                <td ><a th:text="${notice.title}" th:href="@{/notice/detail(no = ${notice.no})}" id="title" ></a></td>
+                <td th:text="${#dates.format(notice.regdate,'yyyy-MM-dd')}"></td>
+                <td th:text="관리자"></td>
+                <td th:text="${notice.cnt}"></td>
+            </tr>
+            <tr th:if="${list.isEmpty()}">
+                <td colspan="6">공지사항이 없습니다.</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
+
+
+    <div style="margin-top: 30px;" th:if="${!list.isEmpty()}">
+        <ul class="pagination justify-content-center mb-0">
+            <li th:if="${curPage > 5}" class="page-item">
+                <a th:href="@{|/notice/list?page=${page.blockStartNum - 1}|}" class="page-link">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </li>
+            <th:block th:each="i: ${#numbers.sequence(page.blockStartNum, page.blockLastNum)}">
+                <li th:class="${i == curPage} ? 'page-item active' : 'page-item'">
+                    <a th:href="@{|/notice/list?page=${i}|}" class="page-link" aria-label="Page ${i}" aria-current="${i == curPage}" th:text="${i}"></a>
+                </li>
+            </th:block>
+            <li th:if="${page.blockLastNum < page.totalPageCount}" class="page-item">
+                <a th:href="@{|/notice/list?page=${page.blockLastNum + 1}|}" class="page-link">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+<!-- noticeList end-->
 </div>
-<!-- ##### Checkout Area End ##### -->
 
-
-<!-- jQuery (Necessary for All JavaScript Plugins) -->
-<script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
-<!-- Popper js -->
-<script th:src="@{/js/popper.min.js}"></script>
-<!-- Bootstrap js -->
-<script th:src="@{/js/bootstrap.min.js}"></script>
-<!-- Plugins js -->
-<script th:src="@{/js/plugins.js}"></script>
-<!-- Classy Nav js -->
-<script th:src="@{/js/classy-nav.min.js}"></script>
-<!-- Active js -->
-<script th:src="@{/js/active.js}"></script>
-
-
+<th:block th:insert="~{layout/footer :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
 </body>
-
 </html>
