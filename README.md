@@ -91,6 +91,7 @@
 
 
 ### 📂CLASS DIAGRAM
+<p align="center"><img alt="usecasediagram1" src="readme/package.png"></p>
 
 
 <br><br>
