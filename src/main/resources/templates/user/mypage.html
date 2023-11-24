@@ -127,9 +127,9 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="sell-tab" data-bs-toggle="tab" data-bs-target="#sell" type="button" role="tab" aria-controls="home" aria-selected="true">팝니다</button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="buy-tab" data-bs-toggle="tab" data-bs-target="#buy" type="button" role="tab" aria-controls="profile" aria-selected="false">삽니다</button>
-        </li>
+<!--        <li class="nav-item" role="presentation">-->
+<!--            <button class="nav-link" id="buy-tab" data-bs-toggle="tab" data-bs-target="#buy" type="button" role="tab" aria-controls="profile" aria-selected="false">삽니다</button>-->
+<!--        </li>-->
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="like-tab" data-bs-toggle="tab" data-bs-target="#like" type="button" role="tab" aria-controls="like" aria-selected="false">좋아요</button>
         </li>
@@ -209,24 +209,6 @@
             </div>
 
 
-
-            <div class=""  style="height:34px; border-bottom: 1px solid gray; margin-bottom:12px ">
-                <h4 style="text-align: center">삽니다</h4>
-            </div>
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3 wow fadeInUp" th:each="request: ${likeRequestList}" data-wow-delay="0.1s" >
-                    <div class="service-item" style="border-color: #000; border-width: 5px; border-style: solid;">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" th:src="${request.bookImage}" alt="bookImage" style="width: 407.98px; height: 244.78px;">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3" th:text="${request.title}"></h4>
-                            <p>거래희망장소: <span th:text="${request.addr}"></span></p><p>등록일: <span th:text="${request.regdate}"></span></p>
-                            <a class="fw-medium" th:href="@{/request/reqDetail(reqNo=${request.reqNo})}">상세보기<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- ---------------------------------이하 신고 탭------------------------------------->
         <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="report-tab">

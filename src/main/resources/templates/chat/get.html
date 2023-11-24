@@ -10,7 +10,7 @@
             #conversation {
                 width:40%;
                 margin:0 auto;position:relative;overflow:hidden;
-                border: 1px solid var(--primary);
+                /*border: 1px solid var(--primary);*/
                 border-radius:1%;padding:0.5em;}
 
             #chatting {
@@ -32,7 +32,7 @@
             }
 
             .task-tooltip {
-                border: var(--primary) solid 1px;
+                /*border: var(--primary) solid 1px;*/
                 border-radius: 5px;
                 color: #333;
                 font-size: 12px;
@@ -61,7 +61,7 @@
             }
 
             .task-tooltip::before {
-                border-color: var(--primary) transparent;
+                border-color: #fff transparent;
                 border-style: solid;
                 border-width: 0 6px 8px 6.5px;
                 content: '';
@@ -74,11 +74,12 @@
                 transform: rotate(270deg);
             }
 
-            .right .task-tooltip {background-color:#ede1d7}
-            .right .task-tooltip::after {border-color:#ede1d7 transparent;left:unset;right:calc(-0.9em - -2px);top:unset;bottom:10px;transform: rotate(90deg);}
+            .right .task-tooltip {background-color:var(--primary)}
+            .right .task-tooltip::after {border-color:var(--primary) transparent;left:unset;right:calc(-0.9em - -2px);top:unset;bottom:10px;transform: rotate(90deg);}
             .right .task-tooltip::before {left:unset;right:-0.9em;top:unset;bottom:10px;transform: rotate(90deg);}
-            .left .task-tooltip {background-color:#c9a688}
-            .left .task-tooltip::after {border-color:#c9a688 transparent;}
+            .left .task-tooltip {background-color: #b1efaa
+            }
+            .left .task-tooltip::after {border-color:#b1efaa transparent;}
 
             #dropdownMenuButton1::after {display:none;}
 
@@ -108,7 +109,7 @@
                             <div class="form-group" style="display:inline-block;width:calc(100% - 80px)">
                                 <input type="text" id="message" name="message" class="form-control" placeholder="메시지 내용">
                             </div>
-                            <button id="send" class="btn btn-primary" type="submit" style="width:76px;">보내기</button>
+                            <button id="send" class="btn btn-primary" type="submit" style="width:72px;">보내기</button>
                         </form>
                     </div>
                 </div>

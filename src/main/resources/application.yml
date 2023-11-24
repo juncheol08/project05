@@ -24,7 +24,8 @@ spring:
     multipart:
       max-file-size: 20MB
       max-request-size: 100MB
-      location: C://upload
+#      location: C://upload
+      location: /Users/juncheol/Desktop/file
 
   messages:
     basename: messages
@@ -33,7 +34,7 @@ spring:
     host: smtp.naver.com
     port: 465
     username: juncheol08@naver.com
-    password: --
+    password: cjswo0825!
     properties:
       mail.smtp.auth: true
       mail.smtp.ssl.enable: true
@@ -52,6 +53,7 @@ logging:
     org:
       springframework: info
 
-itemImgLocation: C:/team35/item
-uploadPath: file:///C:/team35
-
+#itemImgLocation: C:/team35/item
+#uploadPath: file:///C:/team35
+itemImgLocation: /Users/juncheol/Desktop/file/item
+uploadPath: /Users/juncheol/Desktop/file

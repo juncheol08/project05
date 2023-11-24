@@ -34,7 +34,7 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="section-title text-center">
-            <h1 class="display-5 mb-5">당신의 추억을 소중히 하겠습니다.</h1>
+<!--            <h1 class="display-5 mb-5">당신의 추억을 소중히 하겠습니다.</h1>-->
         </div>
         <div class="d-flex justify-content-end">
             <form th:action="@{/market/marketList}" method="get" class="w-50 mb-5">
@@ -74,7 +74,7 @@
                 <div class="service-item border border-1 border-light">
                     <div class="overflow-hidden">
                         <a th:href="@{/market/detail(marketNo=${market.marketNo})}">
-                            <img class="img-fluid" th:src="@{/market/mainImage(saveFile = ${market.getSaveFile()}, originFile = ${market.getOriginFile()}, saveFolder = ${market.getSaveFolder()})}" alt="bookImage" style="width: 407.98px; height: 244.78px;">
+                            <img class="img-fluid" th:src="@{/market/mainImage(saveFile = ${market.getSaveFile()}, originFile = ${market.getOriginFile()}, saveFolder = ${market.getSaveFolder()})}" alt="bookImage" style="width: 407.98px; height: 244.78px; object-fit: contain">
                         </a>
                     </div>
 

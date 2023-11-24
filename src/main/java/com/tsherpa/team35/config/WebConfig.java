@@ -20,7 +20,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/fonts/");
         registry.addResourceHandler("/clEditor/**").addResourceLocations("classpath:/static/clEditor/");
         registry.addResourceHandler("/lib/**").addResourceLocations("classpath:/static/lib/");
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:///c:/upload/");
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:///Users/juncheol/Desktop/file");
     }
 
     @Bean

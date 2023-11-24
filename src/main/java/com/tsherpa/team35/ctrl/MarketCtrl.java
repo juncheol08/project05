@@ -98,7 +98,13 @@ public class MarketCtrl {
         }
 
         String sid = principal != null ? principal.getName() : "";
-        String realPath = req.getSession().getServletContext().getRealPath("/resources/static/upload/");
+        System.out.println("대표사진 값들:"+repImage);
+        System.out.println("상세사진 값들:"+detailImages);
+//        String realPath = "C://upload/";
+        String realPath = "/Users/juncheol/Desktop/file";    // 업로드 경로 설정
+
+
+
 
         String today = new SimpleDateFormat("yyMMdd").format(new Date());
         String repImageSaveFolder = "rep_images/" + today;
@@ -129,7 +135,7 @@ public class MarketCtrl {
                 main.setSaveFile(savemainName);
                 main.setOriginFile(originalmainName);
                 main.setSaveFolder(repImageSaveFolder);
-                mainphoto.transferTo(new File(repImageFolder, savemainName));
+                mainphoto.transferTo(new File(repImageSaveFolder, savemainName));
             }
             mainphotoList.add(main);
         }
@@ -163,6 +169,7 @@ public class MarketCtrl {
 
         return "redirect:/market/marketList";
     }
+
 
 
 
@@ -237,9 +244,8 @@ public class MarketCtrl {
     }
 
     @GetMapping("/mainImage")
-    public ResponseEntity<Resource> download1(@ModelAttribute MainVO dto, HttpServletRequest req) throws IOException {
-        String realPath = req.getSession().getServletContext().getRealPath("/resources/static/upload/");
-        Path path = Paths.get(realPath + dto.getSaveFolder()+"/"+dto.getSaveFile());
+    public ResponseEntity<Resource> download1(@ModelAttribute MainVO dto) throws IOException {
+        Path path = Paths.get(uploadFolder + "/" + dto.getSaveFolder()+"/"+dto.getSaveFile());
         String contentType = Files.probeContentType(path);
         // header를 통해서 다운로드 되는 파일의 정보를 설정한다.
         HttpHeaders headers = new HttpHeaders();
@@ -253,9 +259,8 @@ public class MarketCtrl {
     }
 
     @GetMapping("/totalImage")
-    public ResponseEntity<Resource> download3(@ModelAttribute TotalVO dto,HttpServletRequest req) throws IOException {
-        String realPath = req.getSession().getServletContext().getRealPath("/resources/static/upload/");
-        Path path = Paths.get(realPath + dto.getMainSaveFolder()+"/"+dto.getMainSaveFile());
+    public ResponseEntity<Resource> download3(@ModelAttribute TotalVO dto) throws IOException {
+        Path path = Paths.get(uploadFolder + "/" + dto.getMainSaveFolder()+"/"+dto.getMainSaveFile());
         String contentType = Files.probeContentType(path);
         // header를 통해서 다운로드 되는 파일의 정보를 설정한다.
         HttpHeaders headers = new HttpHeaders();
@@ -269,9 +274,8 @@ public class MarketCtrl {
     }
 
     @GetMapping("/detailImage")
-    public ResponseEntity<Resource> download2(@ModelAttribute DetailVO dto,HttpServletRequest req) throws IOException {
-        String realPath = req.getSession().getServletContext().getRealPath("/resources/static/upload/");
-        Path path = Paths.get(realPath + dto.getSaveFolder()+"/"+dto.getSaveFile());
+    public ResponseEntity<Resource> download2(@ModelAttribute DetailVO dto) throws IOException {
+        Path path = Paths.get(uploadFolder + "/" + dto.getSaveFolder()+"/"+dto.getSaveFile());
         String contentType = Files.probeContentType(path);
         // header를 통해서 다운로드 되는 파일의 정보를 설정한다.
         HttpHeaders headers = new HttpHeaders();

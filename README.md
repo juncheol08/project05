@@ -5,7 +5,7 @@
 ## 🖥️ 프로젝트 : TSHERPA (2023.11.03 - 2023.11.22)
 <p align="center">온라인 중고거래 플랫폼</p>
 <br>
-<p align="center">설명 추가</p>
+<p align="center"></p>
 <br><br>
 
 
@@ -31,58 +31,68 @@
 
 ## ⚒프로젝트 설계
 
-### 📂개념적 설계 (USECASE DIAGRAM)
-<p align="center"><img alt="usecasediagram1" src="https://github.com/jungleGOGO/project05/assets/138674233/4a44440b-3ad5-4258-b937-e53af368f8dd"></p>
-<br><br>
 
 ### 📂DATABASE - 테이블 ERD
-<p align="center"><img alt="usecasediagram1" src="https://github.com/jungleGOGO/project05/assets/138674233/2d4169e6-c1f5-4f7d-ad6d-0a4b44201bdc"></p>
+<p align="center"><img alt="usecasediagram1" src="readme/tsherpa_my.png"></p>
 <br><br>
 
 ### 📂DATABASE - 테이블 구현
 #### ROLE
-<p align="center"><img alt="role" src="https://github.com/jungleGOGO/project05/assets/138674233/592cbffb-6b54-4f19-806e-c3ad35e2dd6c"></p>
+<p align="center"><img alt="role" src="readme/table/role.png"></p>
 
 #### USER
-<p align="center"><img alt="user" src="https://github.com/jungleGOGO/project05/assets/138674233/b549dd7b-8436-49a7-96e2-c3d119d1ca89"></p>
+<p align="center"><img alt="user" src="readme/table/user.png"></p>
 
 #### MARKET
-<p align="center"><img alt="market" src="https://github.com/jungleGOGO/project05/assets/138674233/3ef78077-e62d-4a24-a77a-fced6ae39250"></p>
+<p align="center"><img alt="MARKET" src="readme/table/market.png"></p>
 
-#### REQUEST
-<p align="center"><img alt="request" src="https://github.com/jungleGOGO/project05/assets/138674233/f704b58a-f36b-4097-bb50-99bb044fba2e"></p>
 
 #### CHATROOM
-<p align="center"><img alt="chatroom" src="https://github.com/jungleGOGO/project05/assets/138674233/3631dcbf-f457-45d5-94e9-1ad587b94fc1"></p>
+<p align="center"><img alt="CHATROOM" src="readme/table/chatRoom.png"></p>
+
 
 #### CHATLIST
-<p align="center"><img alt="chatlist" src="https://github.com/jungleGOGO/project05/assets/138674233/7a1cdd40-4144-449e-855d-c55c54fe2ad9"></p>
+<p align="center"><img alt="CHATLIST" src="readme/table/chatList.png"></p>
+
 
 #### MAINPHOTO
-<p align="center"><img alt="mainphoto" src="https://github.com/jungleGOGO/project05/assets/138674233/83b4caec-d3e9-4d53-ab79-5e394e37d77b"></p>
+<p align="center"><img alt="MAINPHOTO" src="readme/table/mainphoto.png"></p>
+
 
 #### PHOTOS
-<p align="center"><img alt="photos" src="https://github.com/jungleGOGO/project05/assets/138674233/f6da2984-7d7f-406c-9f5a-a8805c5cd138"></p>
+<p align="center"><img alt="PHOTOS" src="readme/table/photos.png"></p>
+
 
 #### LIKES
-<p align="center"><img alt="likes" src="https://github.com/jungleGOGO/project05/assets/138674233/203e0f6e-84a7-468e-b1ba-d27432d2e5a5"></p>
+<p align="center"><img alt="LIKES" src="readme/table/likes.png"></p>
+
 
 #### REPORT
-<p align="center"><img alt="report" src="https://github.com/jungleGOGO/project05/assets/138674233/e74523d0-a01c-4bf3-9361-6265f8ca088c"></p>
+<p align="center"><img alt="REPORT" src="readme/table/report.png"></p>
+
 
 #### FAQ
-<p align="center"><img alt="faq" src="https://github.com/jungleGOGO/project05/assets/138674233/6d1aeaad-dee1-43c4-93b2-3f126f3ab778"></p>
+<p align="center"><img alt="FAQ" src="readme/table/faq.png"></p>
+
                     
 #### NOTICE
-<p align="center"><img alt="notice" src="https://github.com/jungleGOGO/project05/assets/138674233/a6e8e90b-dc24-4126-9aad-30222026de27"></p>
+<p align="center"><img alt="NOTICE" src="readme/table/notice.png"></p>
+
                     
 #### QNA
-<p align="center"><img alt="qna" src="https://github.com/jungleGOGO/project05/assets/138674233/2b9371c2-96c9-45b1-976b-c41a4355158f"></p>
+<p align="center"><img alt="QNA" src="readme/table/qna.png"></p>
+
 
 <br><br>
 
+### 📂개념적 설계 (USECASE DIAGRAM)
+<p align="center"><img alt="usecasediagram1" src="https://github.com/jungleGOGO/project05/assets/138674233/4a44440b-3ad5-4258-b937-e53af368f8dd"></p>
+<br><br>
+
+
 ### 📂CLASS DIAGRAM
-![classdiagram](https://github.com/jungleGOGO/project05/assets/138674233/044fddb5-5700-4e73-aec5-548ae8f89199)
+
+
 <br><br>
 
 ### 📂시퀀스 다이어그램 (Sequence Diagram)
@@ -90,8 +100,6 @@
 #### 관리자
 <p align="center"><img alt="시퀀스다이아그램1" src="https://github.com/jungleGOGO/project05/assets/138674233/f165e11f-2686-4908-a960-003fff962211"></p>
 
-#### 삽니다 
-<p align="center"><img alt="시퀀스다이아그램2" src="https://github.com/jungleGOGO/project05/assets/138674233/99a55430-6226-4209-b842-6270164ac581"></p>
 
 #### 팝니다
 <p align="center"><img alt="시퀀스다이아그램1" src="https://github.com/jungleGOGO/project05/assets/138674233/757831e9-1cfc-42d9-9fa6-53f0a9f9e8f1"></p>
@@ -101,7 +109,7 @@
 ## 🗂 메인 페이지
 <br>
 
-![메인페이지](https://github.com/jungleGOGO/project05/assets/138674233/d083ff83-7aff-4deb-b5e7-3b0b2fc61233)
+
 <br><br>
 
 ## 🗂 회원 기능
@@ -142,14 +150,8 @@
   <br>
   <br><br>
   
-### 2. 삽니다
-- 비회원 : 열람 가능
-- 회원 : 글쓰기/ 채팅 / 신고 / 찜하기 가능
-- 네이버 도서 API 적용하여 목록 구현
-  <br>
-  <br><br>
 
-### 3. 채팅
+### 2. 채팅
 - stomp.js / socket.js 활용하여 구현
 - 1 대 1 채팅 
 - DB에 채팅 내용 실시간 반영
