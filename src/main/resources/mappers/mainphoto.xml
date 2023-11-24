@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tsherpa.team35.per.MainphotoMapper">
+<mapper namespace="com.tsherpa.project05.per.MainphotoMapper">
     <insert id="mainphotoInsert">
         insert into mainphoto(marketNo, savefolder, originfile, savefile)
         values
@@ -26,7 +26,7 @@
         </foreach>
     </update>
 
-    <select id="mainphotoList" resultType="com.tsherpa.team35.entity.Mainphoto">
+    <select id="mainphotoList" resultType="com.tsherpa.project05.entity.Mainphoto">
         select * from mainphoto where marketNo=#{marketNo}
     </select>
 </mapper>

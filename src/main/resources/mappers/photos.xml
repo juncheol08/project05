@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tsherpa.team35.per.PhotosMapper">
+<mapper namespace="com.tsherpa.project05.per.PhotosMapper">
     <insert id="photosInsert">
         insert into photos(marketNo, savefolder, originfile, savefile)
         values
@@ -15,7 +15,7 @@
         delete from photos where marketNo=#{marketNo}
     </delete>
 
-    <select id="photosList" resultType="com.tsherpa.team35.entity.Photos">
+    <select id="photosList" resultType="com.tsherpa.project05.entity.Photos">
         select * from photos where marketNo=#{marketNo}
     </select>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tsherpa.team35.per.LikesMapper">
+<mapper namespace="com.tsherpa.project05.per.LikesMapper">
 
-    <resultMap id="Likes" type="com.tsherpa.team35.entity.Likes">
+    <resultMap id="Likes" type="com.tsherpa.project05.entity.Likes">
         <result property="lno" column="lno" />
         <result property="loginId" column="login_id" />
         <result property="marketNo" column="marketNo" />
@@ -34,12 +34,12 @@
         insert into likes (login_id, req_no, liketime)values (#{loginId}, #{reqNo}, default)
     </insert>
 
-    <select id="marketLikeList" resultType="com.tsherpa.team35.entity.Likes">
+    <select id="marketLikeList" resultType="com.tsherpa.project05.entity.Likes">
         select a.marketNo, a.login_id, a.liketime, b.title
         from likes a join market b on b.marketNo=b.marketNo where a.login_id = #{loginId} order by liketime desc
     </select>
 
-    <select id="requestLikeList" resultType="com.tsherpa.team35.entity.Likes">
+    <select id="requestLikeList" resultType="com.tsherpa.project05.entity.Likes">
         select a.req_no, a.login_id, a.liketime, b.title
         from likes a join request b on b.req_no=b.req_no where a.login_id = #{loginId} order by liketime desc
     </select>

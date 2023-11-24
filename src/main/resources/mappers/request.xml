@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tsherpa.team35.per.RequestMapper">
-    <resultMap id="User" type="com.tsherpa.team35.entity.Request">
+<mapper namespace="com.tsherpa.project05.per.RequestMapper">
+    <resultMap id="User" type="com.tsherpa.project05.entity.Request">
         <result property="loginId" column="login_id" />
         <result property="reqNo" column="req_no" />
     </resultMap>
@@ -16,7 +16,7 @@
         </selectKey>
     </insert>
 
-    <select id="requestList" resultType="com.tsherpa.team35.entity.Request">
+    <select id="requestList" resultType="com.tsherpa.project05.entity.Request">
         select * from request
         <where>
         <if test="type != null">
@@ -39,11 +39,11 @@
         order by regdate desc limit #{postStart}, #{postCount}
     </select>
 
-    <select id="requestDetail" resultType="com.tsherpa.team35.entity.Request">
+    <select id="requestDetail" resultType="com.tsherpa.project05.entity.Request">
         select * from request where req_no=#{reqNO}
     </select>
 
-    <select id="getMoreRequests" resultType="com.tsherpa.team35.entity.Request">
+    <select id="getMoreRequests" resultType="com.tsherpa.project05.entity.Request">
         SELECT * FROM request
         LIMIT #{offset}, #{limit}
     </select>
@@ -65,7 +65,7 @@
     </delete>
 
 <!--    유저의 다른 요청사항-->
-    <select id="allRequest" resultType="com.tsherpa.team35.entity.Request">
+    <select id="allRequest" resultType="com.tsherpa.project05.entity.Request">
         select * from request where login_id = #{loginId} order by regdate desc
     </select>
 
@@ -73,7 +73,7 @@
         UPDATE request SET readable=#{readable} WHERE req_no=#{reqNo}
     </update>
 
-    <select id="userRequestList" resultType="com.tsherpa.team35.entity.Request">
+    <select id="userRequestList" resultType="com.tsherpa.project05.entity.Request">
         select * from request where login_id = #{loginId} order by regdate desc
     </select>
 
@@ -81,7 +81,7 @@
         select count(*) from request
     </select>
 
-    <select id="getRequestListForMain" resultType="com.tsherpa.team35.entity.Request">
+    <select id="getRequestListForMain" resultType="com.tsherpa.project05.entity.Request">
         select * from request order by regdate desc limit 3
     </select>
 
@@ -108,10 +108,10 @@
     </select>
 
 
-    <select id="likeRequestList" resultType="com.tsherpa.team35.entity.Request">
+    <select id="likeRequestList" resultType="com.tsherpa.project05.entity.Request">
         select r.* from request r join likes l on r.req_no =l.req_no where l.login_id = #{loginId}
     </select>
-    <select id="getInfo" resultType="com.tsherpa.team35.entity.Request">
+    <select id="getInfo" resultType="com.tsherpa.project05.entity.Request">
         select * from request where login_id = #{loginId}
     </select>
 
